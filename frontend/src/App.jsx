@@ -1,3 +1,4 @@
+const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 import { useState } from "react";
 import axios from "axios";
@@ -11,7 +12,6 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid
 } from "recharts";
 import "./App.css";
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 const COLORS = ["#16a34a", "#94a3b8", "#dc2626"];
 const CATEGORY_COLORS = [
